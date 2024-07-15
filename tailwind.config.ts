@@ -15,6 +15,28 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('daisyui')],
+  daisyui: {
+    themes: [
+      {
+        gestao: {
+          "primary": "#FF6600",
+          "secondary": "#009AFF",
+          "accent": "#7C3D9A",
+          "neutral": "#333333",
+          "base-100": "#F7F7F7",
+        },
+
+        gestaodark: {
+          "primary": "#FF6600",
+          "secondary": "#009AFF",
+          "accent": "#7C3D9A",
+          "neutral": "#F7F7F7",
+          "base-0": "#333333",
+        },
+      },
+    ],
+    darkTheme: "gestaodark"
+  },
 };
 export default config;
