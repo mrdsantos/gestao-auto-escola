@@ -23,16 +23,14 @@ const config: Config = {
           "primary": "#FF6600",
           "secondary": "#009AFF",
           "accent": "#7C3D9A",
-          "neutral": "#333333",
-          "base-100": "#F7F7F7",
+          "neutral": "#EBEBEB",
         },
 
         gestaodark: {
           "primary": "#FF6600",
           "secondary": "#009AFF",
           "accent": "#7C3D9A",
-          "neutral": "#F7F7F7",
-          "base-0": "#333333",
+          "neutral": "#333333",
         },
       },
     ],
