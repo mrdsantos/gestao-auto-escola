@@ -15,7 +15,10 @@ const config: Config = {
       },
     },
   },
-  plugins: [require('daisyui')],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require('daisyui')
+  ],
   daisyui: {
     themes: [
       {
@@ -23,7 +26,8 @@ const config: Config = {
           "primary": "#FF6600",
           "secondary": "#009AFF",
           "accent": "#7C3D9A",
-          "neutral": "#EBEBEB",
+          "neutral": "#E0E0E0",
+          "background": "#F7F7F7",
         },
 
         gestaodark: {
