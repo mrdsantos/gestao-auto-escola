@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import MainNavbar from "./components/MainNavbar/MainNavbar";
+import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 
@@ -24,10 +24,12 @@ export default function RootLayout({
   return (
     <html lang="pt-br" data-theme="gestao">
       <body className={inter.className}>
-        <MainNavbar />
-        {children}
-        <Footer />
 
+        <Header />
+
+        {children}
+
+        <Footer />
 
       </body>
     </html>
