@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation" // Importa o hook usePathname do Next.js para obter a rota atual.
 import Link from "next/link" // Importa o componente Link do Next.js para navegação.
 import clsx from "clsx" // Importa a biblioteca clsx para unir classes condicionalmente.
-import IconHome from "../SvgIcons/IconHome" // Importa o ícone personalizado IconHome.
+
 
 const MainNavbar = () => {
   const pathname = usePathname(); // Obtém a rota atual usando o hook usePathname.
@@ -23,7 +23,6 @@ const MainNavbar = () => {
       {/* Container flexível contendo o ícone da casa */}
       <div className="flex-1 px-3">
         <Link href={"/"}>
-          <IconHome />
         </Link>
       </div>
       
