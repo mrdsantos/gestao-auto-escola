@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Quicksand } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 
-const inter = Inter({ subsets: ["latin"] });
+const quicksand = Quicksand ({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
+});
 
 export const metadata: Metadata = {
   title: {
@@ -23,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" data-theme="gestao">
-      <body className={inter.className}>
+      <body className={quicksand.className}>
 
         <Header />
 
