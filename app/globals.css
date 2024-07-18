@@ -21,3 +21,11 @@ body {
     text-wrap: balance;
   }
 }
+
+.petit-caps {
+  font-variant: petite-caps;
+}
+
+.all-petit-caps {
+  font-variant: all-petite-caps;
+} 
