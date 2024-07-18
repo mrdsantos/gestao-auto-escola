@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-primary p-5">
+    <footer className="bg-primary p-5 mt-5">
       <div className="w-4/6 mx-auto flex flex-col flex-nowrap items-center text-center">
         <p className="font-bold prose">
           Gestão Auto Escola
