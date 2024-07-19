@@ -52,7 +52,7 @@ export default function PerguntasFrequentes() {
           />
           <AcordeonPlusSign
             defaultChecked={false}
-            title="Como posso obter suporte técnico?"
+            title="5. Como posso obter suporte técnico?"
             content="Para suporte técnico, você pode acessar nossa seção de ajuda no site, onde encontrará tutoriais e artigos úteis. Se precisar de assistência personalizada, nossa equipe de suporte está disponível através do e-mail ou chat ao vivo, cujos contatos estão disponíveis na mesma seção."
             className="pb-3 border-b-2 rounded-none border-gray-300 "
           />
