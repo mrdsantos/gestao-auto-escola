@@ -11,9 +11,9 @@ function AcordeonPlusSign({ title, content, defaultChecked, className }: Acordeo
 
         <div className={`collapse collapse-plus ${className}`}>
             <input type="radio" name="my-accordion-3" {... (defaultChecked ? { defaultChecked: true } : {})} />
-            <div className="collapse-title text-xl font-medium">{title}</div>
+            <div className="collapse-title text-lg font-bold">{title}</div>
             <div className="collapse-content">
-                <p>{content}</p>
+                <p className="text-md">{content}</p>
             </div>
         </div>
 
