@@ -3,6 +3,15 @@ import FeatureCardSmall from "../components/FeatureCard/FeatureCardSmall";
 import { Mail, SmilePlus, Cpu, BarChart4, ShieldCheck } from "lucide-react";
 import { ArrowUp } from "lucide-react";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sobre"
+}
+
+
+
+
 export default function sobre() {
   return (
     <main>
