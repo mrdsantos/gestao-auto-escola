@@ -33,6 +33,12 @@ const MainNavbar = () => {
         <Link href={"/"}>Inicio</Link>
       </div>
 
+      {/* Link para a página Sobre */}
+      <div className={linkClass("/sobre")}>
+        <Link href={"/sobre"}>Sobre</Link>
+      </div>
+
+
       {/* Link para a página Perguntas Frequentes */}
       <div className={linkClass("/perguntas-frequentes")}>
         <Link href={"/perguntas-frequentes"}>Perguntas Frequentes</Link>
