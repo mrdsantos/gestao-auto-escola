@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation" // Importa o hook usePathname do Next.js para obter a rota atual.
 import Link from "next/link" // Importa o componente Link do Next.js para navegação.
 import clsx from "clsx" // Importa a biblioteca clsx para unir classes condicionalmente.
-import { Menu } from "lucide-react"
+import { CircleUser, LogIn } from "lucide-react"
 
 
 
@@ -45,10 +45,10 @@ const MainNavbar = () => {
 
       {/* Link para a página de Login */}
       <div className={`${linkClass("/login")} bg-neutral `}>
-        <Link href={"/login"} className="inline-flex gap-1"><Menu /></Link>
+        <Link href={"/login"} className="inline-flex gap-1"><CircleUser /><LogIn /></Link>
       </div>
     </nav>
   )
 }
 
-export default MainNavbar // Exporta o componente MainNavbar como padrão.
+export default MainNavbar // Exporta o componente MainNavbar
