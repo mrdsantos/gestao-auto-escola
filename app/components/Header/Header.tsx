@@ -1,5 +1,4 @@
 import MainNavbar from "../MainNavbar/MainNavbar"
-
 function Header() {
   return (
     <div>
@@ -7,5 +6,4 @@ function Header() {
     </div>
   )
 }
-
 export default Header

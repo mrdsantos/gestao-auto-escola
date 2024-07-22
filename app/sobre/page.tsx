@@ -4,29 +4,27 @@ import { Mail, SmilePlus, Cpu, BarChart4, ShieldCheck } from "lucide-react";
 import { ArrowUp } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
-
 export const metadata: Metadata = {
   title: "Sobre"
 }
-
-
-
-
 export default function sobre() {
   return (
-    <main>
+    <main className="flex-grow">
       {/* Primeira linha com headline */}
       <div className="container w-full max-w-full mx-auto flex flex-col flex-nowrap items-center text-center">
+        {/* //STYLE create margins and padding */}
         <section className="max-w-2xl text-center prose all-petit-caps">
           <h1>Transforme a gestão da sua auto escola</h1>
         </section>
       </div>
       {/* segunda linha com features lado a lado */}
       <div className="container w-full max-w-full mx-auto flex flex-row flex-wrap justify-center">
+        {/* //STYLE adjust margins and paddings */}
         <div className="basis-5/12 b-2 border-sky-700">
           <div className="m-auto w-fit">
             <Image
-              src="/img/sobre-article-img-640-640.png"
+              src="/img/sobre-article-img-640-640.png" 
+              // CONTENT change this image
               width={320}
               height={320}
               alt="Uma desenho abstrato de pessoas construindo um sistema"
@@ -104,6 +102,7 @@ export default function sobre() {
         </div>
       </div>
       {/* quarta linha com call to action */}
+      {/* //STYLE ajeitar esse cta */}
       <div className="containter flex flex-row flex-wrap justify-center content-center items-center mx-auto w-3/4 bg-slate-900 text-neutral py-7 mt-14">
         <div className="w-3/6 prose">
           <h2 className="">Cadastre-se e receba nossa proposta</h2>
