@@ -5,5 +5,7 @@
         "ngClass",
         "class:list",
         "iconStyle"
-    ]
+    ],
+    "todo-tree.tree.showCountsInTree": true,
+    "todo-tree.tree.disableCompactFolders": true
 }
