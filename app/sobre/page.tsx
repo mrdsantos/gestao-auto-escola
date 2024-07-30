@@ -1,58 +1,54 @@
 import Image from "next/image";
-import FeatureCardSmall from "../components/FeatureCard/FeatureCardSmall";
-import { Mail, SmilePlus, Cpu, BarChart4, ShieldCheck } from "lucide-react";
-import { ArrowUp } from "lucide-react";
-import Link from "next/link";
+import FeatureCardSmall from "../components/FeatureCardSmall/FeatureCardSmall";
+import { SmilePlus, Cpu, BarChart4, ShieldCheck } from "lucide-react";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Sobre"
 }
 export default function sobre() {
   return (
-    <main className="flex-grow">
+    <main className="flex-grow bg-gradient-circle bg-contain bg-no-repeat space-y-10">
       {/* Primeira linha com headline */}
-      <div className="container w-full max-w-full mx-auto flex flex-col flex-nowrap items-center text-center">
-        {/* //STYLE create margins and padding */}
-        <section className="max-w-2xl text-center prose all-petit-caps">
-          <h1>Transforme a gestão da sua auto escola</h1>
+      <div className="w-full max-w-full mx-auto text-center mt-10">
+        <section className="w-8/12 mx-auto text-center">
+          <h1 className="text-5xl font-semibold all-petit-caps"><span className="underline decoration-accent-lighter decoration-[16px]">Transf</span>orme a g<span className="bg-complementary-lighter">estão da sua au</span>to escola</h1>
         </section>
       </div>
       {/* segunda linha com features lado a lado */}
-      <div className="container w-full max-w-full mx-auto flex flex-row flex-wrap justify-center">
-        {/* //STYLE adjust margins and paddings */}
-        <div className="basis-5/12 b-2 border-sky-700">
-          <div className="m-auto w-fit">
+      <div className="w-full max-w-full mx-auto flex flex-row flex-wrap justify-center">
+        <div className="basis-5/12 flex items-center">
+          <div className="w-fit ml-auto mr-5">
             <Image
-              src="/img/sobre-article-img-640-640.png" 
-              // CONTENT change this image
-              width={320}
-              height={320}
+              src="/img/sobre-banner-1700-1280.png"
+              width={400}
+              height={400}
               alt="Uma desenho abstrato de pessoas construindo um sistema"
+              className="rounded-lg border-complementary-darker border-l-4"
             />
           </div>
         </div>
-        <div className="basis-5/12">
+        <div className="basis-6/12">
           <article className="prose text-center">
-            <h3>Na Gestão Auto Escola, entendemos as suas dificuldades.</h3>
-            <p className="text-start">Nosso sistema foi desenvolvido especialmente para simplificar e oferecer uma solução completa e eficiente.</p>
+            <h3>Na Gestão Auto Escola, <span className="underline decoration-primary-lighter decoration-4 underline-offset-4">entendemos</span> as suas dificuldades.</h3>
+            <p className="text-start indent-5">Nosso sistema foi desenvolvido especialmente para simplificar e oferecer uma solução completa e eficiente.</p>
           </article>
           <FeatureCardSmall
             iconName="Check"
-            iconStyle="rounded-full bg-emerald-100 text-emerald-500  p-4"
+            iconStyle="rounded-full bg-complementary text-white  p-4"
             iconSize="22"
             title="Agendamento Simplificado"
             description="Evite Conflitos e Sobrecarga de Instrutores de Tempo"
           />
           <FeatureCardSmall
             iconName="Check"
-            iconStyle="rounded-full bg-emerald-100 text-emerald-500  p-4"
+            iconStyle="rounded-full bg-complementary text-white  p-4"
             iconSize="22"
             title="Documentação Digital"
             description="Evite papelada e confusão ao encontrar documentos importantes"
           />
           <FeatureCardSmall
             iconName="Check"
-            iconStyle="rounded-full bg-emerald-100 text-emerald-500  p-4"
+            iconStyle="rounded-full bg-complementary text-white  p-4"
             iconSize="22"
             title="Boa Comunicação"
             description="Melhore a comunicação entre estudantes, instrutores e funcionários"
@@ -60,10 +56,10 @@ export default function sobre() {
         </div>
       </div>
       {/* terceira linha com cards */}
-      <div className="containter mx-auto max-w-full prose">
-        <h1 className="text-center petit-caps">Porque escolher a gente?</h1>
-        <div className="mx-auto w-11/12 md:grid md:grid-cols-2 lg:grid-cols-4 gap-3 not-prose">
-          <div className="card shadow-xl shadow-slate-400 h-[250px] flex-1 max-w-[290px]">
+      <div className="mx-auto max-w-full">
+        <h1 className="text-center text-4xl font-semibold petit-caps mb-5 w-4/12 mx-auto bg-gradient-square bg-cover">Porque escolher a gente?</h1>
+        <div className="mx-auto w-11/12 flex flex-row flex-wrap items-center justify-center gap-7">
+          <div className="card shadow-xl shadow-slate-400 h-[250px] flex-1 min-w-[260px] max-w-[290px]">
             <div className="card-body items-center">
               <div className="w-fit text-sky-600">
                 <Cpu size={38} />
@@ -72,7 +68,7 @@ export default function sobre() {
               <p className="text-center">Simplifique agendamentos, gerencie instrutores e alunos de forma precisa, sem erros</p>
             </div>
           </div>
-          <div className="card shadow-xl shadow-slate-400 h-[250px] flex-1 max-w-[290px]">
+          <div className="card shadow-xl shadow-slate-400 h-[250px] flex-1 min-w-[260px] max-w-[290px]">
             <div className="card-body items-center">
               <div className="w-fit text-rose-600">
                 <SmilePlus size={38} />
@@ -81,7 +77,7 @@ export default function sobre() {
               <p className="text-center">Acesso fácil ao cronograma de aulas, progresso e comunicação direta com instrutores</p>
             </div>
           </div>
-          <div className="card shadow-xl shadow-slate-400 h-[250px] flex-1 max-w-[290px]">
+          <div className="card shadow-xl shadow-slate-400 h-[250px] flex-1 min-w-[260px] max-w-[290px]">
             <div className="card-body items-center">
               <div className="w-fit text-emerald-600">
                 <BarChart4 size={38} />
@@ -90,7 +86,7 @@ export default function sobre() {
               <p className="text-center">Insights precisos sobre desempenho, taxa de aprovação e análise financeira para decisões</p>
             </div>
           </div>
-          <div className="card shadow-xl shadow-slate-400 h-[250px] flex-1 max-w-[290px]">
+          <div className="card shadow-xl shadow-slate-400 h-[250px] flex-1 min-w-[260px] max-w-[290px]">
             <div className="card-body items-center">
               <div className="w-fit text-violet-600">
                 <ShieldCheck size={38} />
@@ -102,18 +98,14 @@ export default function sobre() {
         </div>
       </div>
       {/* quarta linha com call to action */}
-      {/* //STYLE ajeitar esse cta */}
-      <div className="containter flex flex-row flex-wrap justify-center content-center items-center mx-auto w-3/4 bg-slate-900 text-neutral py-7 mt-14">
+      <div className="flex flex-row flex-wrap justify-center content-center items-center mx-auto w-3/4 bg-complementary text-neutral py-7 mt-14">
         <div className="w-3/6 prose">
           <h2 className="">Cadastre-se e receba nossa proposta</h2>
         </div>
-        <div className="w-2/5 ">
-          <label className="input flex items-center gap-2 all-petit-caps">
-            <Mail className="text-neutral-600 " strokeWidth={1.5} />
-            <input type="text" placeholder="Digite seu E-mail" className="placeholder-neutral-800" />
-            <Link href="#" className="ml-auto">
-              <ArrowUp strokeWidth={2.5} size={30} className="text-base-300 justify-self-end bg-slate-900 w-9 h-9 rounded-lg" />
-            </Link>
+        <div className="join not-prose">
+          <label className="label">
+            <input type="text" placeholder="usuario@email.com" className="input join-item" />
+            <button className="btn btn-primary join-item">Cadastrar</button>
           </label>
         </div>
       </div>

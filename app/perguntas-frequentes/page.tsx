@@ -1,28 +1,26 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import AcordeonPlusSign from "../components/AcordeonPlusSign/AcordeonPlusSign";
-
 export const metadata: Metadata = {
   title: "Perguntas Frequentes"
 }
-
 export default function PerguntasFrequentes() {
   return (
-    <main>
+    <main className="space-y-10">
       {/* primeira linha com banner */}
-      <div className="w-full flex bg-primary items-center justify-center h-28">
-        <h1 className=" text-4xl font-black text-slate-900">PERGUNTAS FREQUENTES</h1>
+      <div className="w-full mt-10">
+        <h1 className="text-center text-4xl font-black"><span className="bg-complementary-lighter">PERGU</span>NT<span className="underline decoration-accent-lighter decoration-8">AS FREQUE</span>NTES</h1>
       </div>
       {/* segunda linha com 2 colunas, 1 imagem e 1 acordeon */}
       <div className="div flex flex-row flex-wrap justify-center align-top
-       gap-4 overflow-hidden">
+       gap-6">
         <div className="w-5/12">
           <Image
-            src="/img/banner540x430.png"
-            width={420}
-            height={300}
+            src="/img/faq-banner-650-480.png"
+            width={650}
+            height={480}
             alt=""
-            className="mx-auto"
+            className="rounded-md"
           />
         </div>
         <div className="w-5/12">
@@ -56,16 +54,8 @@ export default function PerguntasFrequentes() {
             content="Para suporte técnico, você pode acessar nossa seção de ajuda no site, onde encontrará tutoriais e artigos úteis. Se precisar de assistência personalizada, nossa equipe de suporte está disponível através do e-mail ou chat ao vivo, cujos contatos estão disponíveis na mesma seção."
             className="pb-3 border-b-2 rounded-none border-gray-300 "
           />
-
         </div>
       </div>
-      {/* terceira linha com cta */}
-      <div className="containter w-full min-w-full flex bg-accent h-32 justify-center items-center">
-        <button className="btn btn-primary btn-circle w-fit h-auto p-6 text-2xl">Cadastre-se</button>
-      </div>
-
-
-
     </main>
   );
 }

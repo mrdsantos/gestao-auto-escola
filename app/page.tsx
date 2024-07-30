@@ -1,25 +1,24 @@
 "use client"
 import Image from "next/image";
 import FeatureCardLarge from "./components/FeatureCardLarge/FeatureCardLarge";
-
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex-grow space-y-14 bg-background">
-      {/* //STYLE create margins and padding */}
-      <div className=" mx-auto max-w-full flex flex-row flex-nowrap justify-center p-5 sm:p-10">
+    <main className="flex-grow space-y-14 bg-gradient-circle bg-contain bg-no-repeat">
+      <div className="mx-auto image flex flex-row flex-nowrap justify-center px-5 sm:px-10">
         {/* //IMG create images for hero section */}
-        <section className="hidden sm:inline-block">
+        <div className="hidden sm:inline-block mr-5 mt-10">
           <Image
             src="/img/home-header-banner-640-640.png"
             width={640}
             height={640}
             alt=""
           />
-        </section>
+        </div>
         <section className="prose max-w-80 text-center flex flex-col justify-center">
-          <h1 className="mb-0 text-complementary-darker">Transforme Sua Autoescola</h1>
-          <p className="text-start text-lg text-neutral-900 indent-5 font-semibold">Maximize a eficiência e simplifique a administração da sua autoescola com nosso sistema inovador.</p>
+          <h1 className="mb-0 text-complementary-darker text-5xl sm:text-6xl md:text-7xl">Transforme Sua Autoescola</h1>
+          <p className="text-start text-2xl text-neutral-900 indent-5 font-semibold">Maximize a <span className="bg-primary-lighter">eficiência</span> e <span className="bg-accent-lighter">simplifique</span> a administração da sua <span className="underline underline-offset-2 decoration-complementary-lighter decoration-8">Auto Escola</span> com nosso sistema inovador.</p>
         </section>
       </div>
       <div className="wrapper">
@@ -68,91 +67,178 @@ export default function Home() {
             <p>Experimente o Gestão Auto Escola agora e descubra como nossa solução pode transformar sua autoescola.<br />Cadastre-se gratuitamente e aproveite todos os benefícios!</p>
           </div>
           <div className="md:w-3/12">
-            <button className="btn btn-wide self-center bg-black text-white border-rose-900 font-bold text-lg hover:bg-rose-950 hover:text-white hover:border-black hover:b-2">Cadastrar</button>
+            <button className="btn btn-wide self-center bg-black text-white border-rose-900 font-bold text-lg hover:bg-rose-950 hover:text-white hover:border-black hover:b-2"><Link href={"/cadastro"}>Cadastre-se</Link></button>
           </div>
         </div>
         <div className="w-full h-2 bg-black"></div>
       </div>
-      <div className="carousel w-full">
-        
-
-        <div className="md:w-11/12 lg:w-7/12 mx-5 mb-10 sm:mx-auto flex flex-col md:flex-row flex-nowrap justify-center items-center sm:gap-5 bg-surface shadow-lg shadow-slate-400 rounded-xl">
-          <section className="w-fit p-5 prose order-2 md:order-1">
-            <h2 className="text-center md:text-end">Gestão Auto Escola transformou minha auto escola.</h2>
-            <p className="font-medium indent-5 text-lg sm:text-base text-pretty">
-              O sistema agilizou a marcação de aulas e reduziu desordens.
-              As mensagens automáticas garantem que alunos e instrutores estão sempre cientes, diminuindo abstenções e aumentando pontualidade.
-            </p>
-          </section>
-          <section className="w-96 mx-auto p-5 text-center order-1 md:order-2 grayscale-[50%]">
-            <Image
-              src="/img/home-testimonial-pic-500-500.png"
-              width={500}
-              height={500}
-              alt="Foto close-up de uma mulher de negócios ruiva sorrindo"
-              className="mask mask-parallelogram"
-            />
-            <p className="text-end -mt-4 mb-2 w-fit mx-auto text-lg sm:text-">Rafaella Freitas</p>
-            <div className="rating not-prose order-3">
-              <input type="radio" name="rating-1" className="mask mask-star bg-primary" checked disabled />
-              <input type="radio" name="rating-1" className="mask mask-star bg-primary" checked disabled />
-              <input type="radio" name="rating-1" className="mask mask-star bg-primary" checked disabled />
-              <input type="radio" name="rating-1" className="mask mask-star bg-primary" checked disabled />
-              <input type="radio" name="rating-1" className="mask mask-star bg-primary" checked disabled />
+      <div className="w-full bg-gradient-square bg-cover">
+        <div className="text-center prose all-petit-caps mx-auto mb-10 bg-gradient-square bg-cover">
+          <h1>O que Nossos Clientes <span className="underline underline-offset-2 decoration-8 decoration-complementary">Diz</span>em</h1>
+        </div>
+        <div className="carousel w-full">
+          <div id="slide1" className="carousel-item w-full flex flex-col">
+            <div className="md:w-11/12 lg:w-7/12 mx-5 mb-10 sm:mx-auto flex flex-col md:flex-row flex-nowrap justify-center items-start sm:gap-5 bg-surface shadow-lg shadow-slate-400 rounded-xl">
+              <section className="w-fit p-5 prose order-2 md:order-1">
+                <h2 className="text-center md:text-end">Gestão Auto Escola Transformou Minha Auto Escola</h2>
+                <p className="font-medium indent-5 text-lg sm:text-base text-pretty">
+                  O sistema agilizou a marcação de aulas e reduziu desordens.
+                  As mensagens automáticas garantem que alunos e instrutores estão sempre cientes, diminuindo abstenções e aumentando pontualidade.
+                </p>
+              </section>
+              <section className="mx-auto p-5 text-center order-1 md:order-2 bg-complementary-lighter rounded-lg">
+                <div className="w-96 max-w-full grayscale-[50%]">
+                  <Image
+                    src="/img/home-testimonial-pic-500-500.png"
+                    width={500}
+                    height={500}
+                    alt=""
+                    className="mask mask-parallelogram"
+                  />
+                </div>
+                <p className="text-end -mt-4 mb-2 w-fit mx-auto text-lg">Rafaella Freitas</p>
+                <div className="rating not-prose order-3 gap-3">
+                  <input type="radio" name="rating-1" className="mask mask-star bg-blue-800 " checked disabled />
+                  <input type="radio" name="rating-1" className="mask mask-star bg-blue-800 " checked disabled />
+                  <input type="radio" name="rating-1" className="mask mask-star bg-blue-800 " checked disabled />
+                  <input type="radio" name="rating-1" className="mask mask-star bg-blue-800 " checked disabled />
+                  <input type="radio" name="rating-1" className="mask mask-star bg-blue-800 " checked disabled />
+                </div>
+              </section>
             </div>
-          </section>
+            <div className="flex justify-center w-full space-x-10">
+              <a href="#slide3" className="btn btn-circle">❮</a>
+              <a href="#slide2" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" className="carousel-item w-full flex flex-col">
+            <div className="md:w-11/12 lg:w-7/12 mx-5 mb-10 sm:mx-auto flex flex-col md:flex-row flex-nowrap justify-center items-start sm:gap-5 bg-surface shadow-lg shadow-slate-400 rounded-xl">
+              <section className="w-fit p-5 prose order-2 md:order-1">
+                <h2 className="text-center md:text-end">A Digitalização Melhorou Tudo</h2>
+                <p className="font-medium indent-5 text-lg sm:text-base text-pretty">
+                  A digitalização dos documentos facilitou o acesso e organização de informações. O suporte contínuo da equipe foi essencial para nossa adaptação.
+                </p>
+              </section>
+              <section className="mx-auto p-5 text-center order-1 md:order-2 bg-complementary-lighter rounded-lg">
+                <div className="w-96 max-w-full grayscale-[50%]">
+                  <Image
+                    src="/img/home-testimonial-pic-3-500-500.png"
+                    width={500}
+                    height={500}
+                    alt=""
+                    className="mask mask-parallelogram"
+                  />
+                </div>
+                <p className="text-end -mt-4 mb-2 w-fit mx-auto text-lg">Luiz Alberto Cunha </p>
+                <div className="rating not-prose order-3 gap-3">
+                  <input type="radio" name="rating-1" className="mask mask-star bg-blue-800 " checked disabled />
+                  <input type="radio" name="rating-1" className="mask mask-star bg-blue-800 " checked disabled />
+                  <input type="radio" name="rating-1" className="mask mask-star bg-blue-800 " checked disabled />
+                  <input type="radio" name="rating-1" className="mask mask-star bg-blue-800 " checked disabled />
+                  <input type="radio" name="rating-1" className="mask mask-star bg-blue-800 " checked disabled />
+                </div>
+              </section>
+            </div>
+            <div className="flex justify-center w-full space-x-10">
+              <a href="#slide1" className="btn btn-circle">❮</a>
+              <a href="#slide3" className="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" className="carousel-item w-full flex flex-col">
+            <div className="md:w-11/12 lg:w-7/12 mx-5 mb-10 sm:mx-auto flex flex-col md:flex-row flex-nowrap justify-center items-start bg-surface shadow-lg shadow-slate-400 rounded-xl">
+              <section className="w-fit p-5 prose order-2 md:order-1">
+                <h2 className="text-center md:text-end">Aumento de Produtividade e Eficiência</h2>
+                <p className="font-medium indent-5 text-lg sm:text-base text-pretty">
+                  Padronizamos nossas tarefas diárias, aumentando a produtividade e eficiência da equipe. A interface intuitiva e o suporte técnico excepcional nos permitiram adotar a plataforma rapidamente. Agora, temos mais tempo para focar no desenvolvimento de nossos alunos, e os resultados foram impressionantes.
+
+                </p>
+              </section>
+              <section className="mx-auto p-5 text-center order-1 md:order-2 bg-complementary-lighter rounded-lg">
+                <div className="w-96 max-w-full grayscale-[50%]">
+                  <Image
+                    src="/img/home-testimonial-pic-2-500-500.png"
+                    width={500}
+                    height={500}
+                    alt=""
+                    className="mask mask-parallelogram"
+                  />
+                </div>
+                <p className="text-end -mt-4 mb-2 w-fit mx-auto text-lg">Maria Alice Xavier</p>
+                <div className="rating not-prose order-3 gap-3">
+                  <input type="radio" name="rating-1" className="mask mask-star bg-blue-800 " checked disabled />
+                  <input type="radio" name="rating-1" className="mask mask-star bg-blue-800 " checked disabled />
+                  <input type="radio" name="rating-1" className="mask mask-star bg-blue-800 " checked disabled />
+                  <input type="radio" name="rating-1" className="mask mask-star bg-blue-800 " checked disabled />
+                  <input type="radio" name="rating-1" className="mask mask-star bg-blue-800 " checked disabled />
+                </div>
+              </section>
+            </div>
+            <div className="flex justify-center w-full space-x-10">
+              <a href="#slide2" className="btn btn-circle">❮</a>
+              <a href="#slide1" className="btn btn-circle">❯</a>
+            </div>
+          </div>
         </div>
       </div>
-
       <div className="max-w-full">
         <div className="prose">
-          <h1 className="text-center">Nossos Clientes</h1>
+          <h1 className="text-center"><span className="bg-primary-lighter">Nos</span>sos <span className="underline decoration-8 underline-offset-2 decoration-accent-lighter">Clientes</span></h1>
         </div>
         <div className="flex flex-row flex-wrap justify-center items-center gap-16 mt-5">
           <div className="lg:grayscale lg:hover:grayscale-0">
-            <Image
-              src="/img/home-logo-1-200-200.png"
-              width={200}
-              height={200}
-              alt="Business Logo"
-              style={{ height: "90px", width: "auto" }}
-            />
+            <Link href="/">
+              <Image
+                src="/img/home-logo-1-200-200.png"
+                width={200}
+                height={200}
+                alt="Business Logo"
+                style={{ height: "90px", width: "auto" }}
+              />
+            </Link>
           </div>
           <div className="lg:grayscale lg:hover:grayscale-0">
-            <Image
-              src="/img/home-logo-2-200-200.png"
-              width={200}
-              height={200}
-              alt="Business Logo"
-              style={{ height: "90px", width: "auto" }}
-            />
+            <Link href="/">
+              <Image
+                src="/img/home-logo-2-200-200.png"
+                width={200}
+                height={200}
+                alt="Business Logo"
+                style={{ height: "90px", width: "auto" }}
+              />
+            </Link>
           </div>
           <div className="lg:grayscale lg:hover:grayscale-0">
-            <Image
-              src="/img/home-logo-3-200-200.png"
-              width={200}
-              height={200}
-              alt="Business Logo"
-              style={{ height: "90px", width: "auto" }}
-            />
+            <Link href="/">
+              <Image
+                src="/img/home-logo-3-200-200.png"
+                width={200}
+                height={200}
+                alt="Business Logo"
+                style={{ height: "90px", width: "auto" }}
+              />
+            </Link>
           </div>
           <div className="lg:grayscale lg:hover:grayscale-0">
-            <Image
-              src="/img/home-logo-4-200-200.png"
-              width={200}
-              height={200}
-              alt="Business Logo"
-              style={{ height: "90px", width: "auto" }}
-            />
+            <Link href="/">
+              <Image
+                src="/img/home-logo-4-200-200.png"
+                width={200}
+                height={200}
+                alt="Business Logo"
+                style={{ height: "90px", width: "auto" }}
+              />
+            </Link>
           </div>
           <div className="lg:grayscale lg:hover:grayscale-0">
-            <Image
-              src="/img/home-logo-5-200-200.png"
-              width={200}
-              height={200}
-              alt="Business Logo"
-              style={{ height: "90px", width: "auto" }}
-            />
+            <Link href="/">
+              <Image
+                src="/img/home-logo-5-200-200.png"
+                width={200}
+                height={200}
+                alt="Business Logo"
+                style={{ height: "90px", width: "auto" }}
+              />
+            </Link>
           </div>
         </div>
       </div>
