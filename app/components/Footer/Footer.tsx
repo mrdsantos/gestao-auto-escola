@@ -1,9 +1,11 @@
+//CREATE refazer o footer
+
 const Footer = () => {
   return (
     <footer className="footer bg-gray-950 p-10 mt-10 flex flex-col items-center">
-      <div className="w-10/12 flex flex-row flex-wrap justify-evenly">
+      <div className="w-10/12 flex flex-row flex-wrap justify-evenly text-white">
         <div className="">
-          <div className="footer-title text-white p-5 basis[33.3%] flex flex-col gap-5">
+          <div className="footer-title text-white p-5 basis[33.3%] flex flex-col gap-5 opacity-1">
             <svg
               width="50"
               height="50"
@@ -17,7 +19,6 @@ const Footer = () => {
             </svg>
             <p>Gestão Auto Escola</p>
             <p>Orgulhosamente desenvolvendo<br />tecnologias confiáveis desde 2024</p>
-
           </div>
         </div>
         <div className="basis[33.3%] gap-5">

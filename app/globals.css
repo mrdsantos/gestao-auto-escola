@@ -1,8 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root {
-}
 
 .petit-caps {
 	font-variant: petite-caps;
@@ -10,6 +8,10 @@
 .all-petit-caps {
 	font-variant: all-petite-caps;
 }
-:focus-visible {
-	outline: none;
+input:focus, .input:focus-within  {
+	@apply outline-none;
 }
+
+.footer-title {
+	@apply opacity-90;
+  }
