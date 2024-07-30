@@ -5,7 +5,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 const quicksand = Quicksand({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600","700"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 export const metadata: Metadata = {
   title: {
