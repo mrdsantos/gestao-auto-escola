@@ -3,23 +3,13 @@
 @tailwind utilities;
 :root {
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-  }
-}
-body {
-}
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+
 .petit-caps {
-  font-variant: petite-caps;
+	font-variant: petite-caps;
 }
 .all-petit-caps {
-  font-variant: all-petite-caps;
+	font-variant: all-petite-caps;
 }
 :focus-visible {
-  outline: none;
+	outline: none;
 }
