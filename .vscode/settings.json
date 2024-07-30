@@ -4,8 +4,14 @@
         "className",
         "ngClass",
         "class:list",
-        "iconStyle"
+        "iconStyle",
+        "backgroundColor"
     ],
     "todo-tree.tree.showCountsInTree": true,
-    "todo-tree.tree.disableCompactFolders": true
+    "todo-tree.tree.disableCompactFolders": true,
+    "cSpell.words": [
+        "automacao",
+        "Caroussel",
+        "Rafaella"
+    ]
 }
