@@ -3,9 +3,9 @@ import { Quicksand } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-const quicksand = Quicksand ({
+const quicksand = Quicksand({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
+  weight: ["300", "400", "500", "600","700"],
 });
 export const metadata: Metadata = {
   title: {
@@ -21,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br" data-theme="gestao">
-      <body className={quicksand.className}>
+    <html lang="pt-br" data-theme="light">
+      <body className={`bg-background, ${quicksand.className}`}>
         <div className="min-h-screen flex flex-col">
           <Header />
           {children}
