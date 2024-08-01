@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex-grow space-y-14 bg-gradient-circle bg-contain bg-no-repeat">
+    <main className="flex-grow space-y-14 bg-gradient-circle bg-cover bg-no-repeat">
       <div className="mx-auto image flex flex-row flex-nowrap justify-center px-5 sm:px-10">
         {/* //IMG create images for hero section */}
         <div className="hidden sm:inline-block mr-5 mt-10">

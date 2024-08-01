@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 }
 export default function sobre() {
   return (
-    <main className="flex-grow bg-gradient-circle bg-contain bg-no-repeat space-y-10 text-custom-content">
+    <main className="flex-grow bg-gradient-circle bg-cover bg-no-repeat space-y-10 text-custom-content">
       {/* Primeira linha com headline */}
       <div className="w-full max-w-full mx-auto text-center mt-10">
         <section className="w-8/12 mx-auto text-center">
