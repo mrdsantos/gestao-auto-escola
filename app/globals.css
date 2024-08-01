@@ -2,16 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+	:root {
+		--color-primary: 18deg 100% 57%;
+		--color-primary-darker: 16deg 100% 49%;
+		--color-primary-lighter: 18deg 100% 65%;
+		--color-complementary: 197deg 100% 50%;
+		--color-complementary-darker: 199deg 100% 47%;
+		--color-complementary-lighter: 197deg 100% 85%;
+		--color-accent: 343deg 100% 55%;
+		--color-accent-darker: 342deg 76% 45%;
+		--color-accent-lighter: 343deg 100% 78%;
+		--color-surface: 0deg 0% 92%;
+		--color-custom-neutral-content: 0deg 0% 12%;
+
+		.scroll-snap-type: none !important;
+	}
+
+	:root[data-theme="dark"] {
+		/* Suas regras CSS aqui */
+		--color-surface: 180deg 0% 8%;
+		--color-custom-neutral-content: 180deg 0% 88%;
+
+		background-color: #0A0A0A;
+
+		.shadow-lg, .shadow-xl{
+			box-shadow: none;
+		}
+
+		.text-base-content {
+			color: hsl(180deg 0% 88%);
+		}
+
+	}
+}
+
 .petit-caps {
 	font-variant: petite-caps;
 }
 .all-petit-caps {
 	font-variant: all-petite-caps;
 }
-input:focus, .input:focus-within  {
+input:focus,
+.input:focus-within {
 	@apply outline-none;
 }
 
 .footer-title {
 	@apply opacity-90;
-  }
+}
