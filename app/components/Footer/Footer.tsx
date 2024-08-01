@@ -60,9 +60,9 @@ const Footer = () => {
         </div>
         <div className="basis[33.3%] gap-5">
           <div className="footer-title text-white p-5">
-            <form>
               <h6 className="footer-title text-white">Newsletter</h6>
-              <fieldset className="form-control w-80">
+            <form>
+              <fieldset className="form-control">
                 <label className="label">
                   <span className="label-text text-white">Digite seu E-mail</span>
                 </label>
