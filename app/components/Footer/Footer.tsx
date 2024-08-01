@@ -62,7 +62,7 @@ const Footer = () => {
           <div className="footer-title text-white p-5">
               <h6 className="footer-title text-white">Newsletter</h6>
             <form>
-              <fieldset className="form-control">
+              <fieldset className="form-control w-60 md:w-80">
                 <label className="label">
                   <span className="label-text text-white">Digite seu E-mail</span>
                 </label>
