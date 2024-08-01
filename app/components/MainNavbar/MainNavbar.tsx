@@ -18,11 +18,11 @@ const MainNavbar = () => {
       }
     );
   return (
-    <nav className="navbar bg-primary text-white">
+    <nav className="navbar bg-primary text-white px-5 lg:px-15 xl:px-28">
       {/* Container flexível contendo o ícone da casa */}
       <div className="nav-start px-5 flex-1">
         <div className="dropdown">
-        <div tabIndex={0} role="button" className="border-none bg-primary active:animate-spin">
+        <div tabIndex={0} role="button" className="md:hidden border-none bg-primary active:animate-spin">
             <Menu />
         </div>
           <div tabIndex={0} className="menu menu-sm dropdown-content bg-primary rounded-box gap-y-3 mt-3 w-52 p-2 shadow">
@@ -49,8 +49,11 @@ const MainNavbar = () => {
         </div>
         <div className="mx-auto md:mx-0">
           <Link href={"/"}>
-            <h1>logo</h1>
+            <h1 className="text-xl md:text-3xl font-black">Gestão Auto Escola</h1>
           </Link>
+        </div>
+        <div className="md:hidden">
+        <ThemeController />
         </div>
       </div>
       {/* Link para a página inicial */}
