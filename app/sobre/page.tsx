@@ -7,11 +7,11 @@ export const metadata: Metadata = {
 }
 export default function sobre() {
   return (
-    <main className="flex-grow bg-gradient-circle bg-contain bg-no-repeat space-y-10">
+    <main className="flex-grow bg-gradient-circle bg-contain bg-no-repeat space-y-10 text-custom-content">
       {/* Primeira linha com headline */}
       <div className="w-full max-w-full mx-auto text-center mt-10">
         <section className="w-8/12 mx-auto text-center">
-          <h1 className="text-5xl font-semibold all-petit-caps"><span className="underline decoration-accent-lighter decoration-[16px]">Transf</span>orme a g<span className="bg-complementary-lighter">estão da sua au</span>to escola</h1>
+          <h1 className="text-5xl font-semibold all-petit-caps"><span className="underline decoration-accent-lighter decoration-[16px]">Transf</span>orme a gestão da sua auto escola</h1>
         </section>
       </div>
       {/* segunda linha com features lado a lado */}
@@ -28,8 +28,8 @@ export default function sobre() {
           </div>
         </div>
         <div className="basis-6/12">
-          <article className="prose text-center">
-            <h3>Na Gestão Auto Escola, <span className="underline decoration-primary-lighter decoration-4 underline-offset-4">entendemos</span> as suas dificuldades.</h3>
+          <article className="text-center">
+            <h3 className="text-lg font-semibold">Na Gestão Auto Escola, <span className="underline decoration-primary-lighter decoration-4 underline-offset-4">entendemos</span> as suas dificuldades.</h3>
             <p className="text-start indent-5">Nosso sistema foi desenvolvido especialmente para simplificar e oferecer uma solução completa e eficiente.</p>
           </article>
           <FeatureCardSmall
@@ -56,11 +56,11 @@ export default function sobre() {
         </div>
       </div>
       {/* terceira linha com cards */}
-      <div className="mx-auto max-w-full">
-        <h1 className="text-center text-4xl font-semibold petit-caps mb-5 w-4/12 mx-auto bg-gradient-square bg-cover">Porque escolher a gente?</h1>
+      <div className="mx-auto max-w-full text-custom-content">
+        <h1 className="text-center text-4xl font-semibold petit-caps mb-5 w-4/12 mx-auto bg-gradient-square bg-cover">Por que escolher a gente?</h1>
         <div className="mx-auto w-11/12 flex flex-row flex-wrap items-center justify-center gap-7">
           <div className="card shadow-xl shadow-slate-400 h-[250px] flex-1 min-w-[260px] max-w-[290px]">
-            <div className="card-body items-center">
+            <div className="card-body items-center bg-surface">
               <div className="w-fit text-sky-600">
                 <Cpu size={38} />
               </div>
@@ -69,7 +69,7 @@ export default function sobre() {
             </div>
           </div>
           <div className="card shadow-xl shadow-slate-400 h-[250px] flex-1 min-w-[260px] max-w-[290px]">
-            <div className="card-body items-center">
+            <div className="card-body items-center bg-surface">
               <div className="w-fit text-rose-600">
                 <SmilePlus size={38} />
               </div>
@@ -78,7 +78,7 @@ export default function sobre() {
             </div>
           </div>
           <div className="card shadow-xl shadow-slate-400 h-[250px] flex-1 min-w-[260px] max-w-[290px]">
-            <div className="card-body items-center">
+            <div className="card-body items-center bg-surface">
               <div className="w-fit text-emerald-600">
                 <BarChart4 size={38} />
               </div>
@@ -87,7 +87,7 @@ export default function sobre() {
             </div>
           </div>
           <div className="card shadow-xl shadow-slate-400 h-[250px] flex-1 min-w-[260px] max-w-[290px]">
-            <div className="card-body items-center">
+            <div className="card-body items-center bg-surface">
               <div className="w-fit text-violet-600">
                 <ShieldCheck size={38} />
               </div>
@@ -98,11 +98,11 @@ export default function sobre() {
         </div>
       </div>
       {/* quarta linha com call to action */}
-      <div className="flex flex-row flex-wrap justify-center content-center items-center mx-auto w-3/4 bg-complementary text-neutral py-7 mt-14">
-        <div className="w-3/6 prose">
-          <h2 className="">Cadastre-se e receba nossa proposta</h2>
+      <div className="flex flex-row flex-wrap justify-center content-center items-center mx-auto w-3/4 bg-complementary py-7 mt-14 text-black">
+        <div className="w-3/6">
+          <h2 className="font-bold text-xl">Cadastre-se e receba nossa proposta</h2>
         </div>
-        <div className="join not-prose">
+        <div className="join">
           <label className="label">
             <input type="text" placeholder="usuario@email.com" className="input join-item" />
             <button className="btn btn-primary join-item">Cadastrar</button>

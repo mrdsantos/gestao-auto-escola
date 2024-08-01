@@ -3,6 +3,9 @@ import { usePathname } from "next/navigation" // Importa o hook usePathname do N
 import Link from "next/link" // Importa o componente Link do Next.js para navegação.
 import clsx from "clsx" // Importa a biblioteca clsx para unir classes condicionalmente.
 import { Menu, CircleUser, LogIn, X } from "lucide-react"
+import ThemeController from "../ThemeController/ThemeController"
+
+
 const MainNavbar = () => {
   const pathname = usePathname(); // Obtém a rota atual usando o hook usePathname.
   // Função para gerar classes CSS para links de navegação.
@@ -71,6 +74,8 @@ const MainNavbar = () => {
         <div className={`${linkClass("/login")} bg-primary `}>
           <Link href={"/login"} className="inline-flex gap-1"><CircleUser /><LogIn /></Link>
         </div>
+        {/* Darkmode Toggler */}
+        <ThemeController />
       </div>
     </nav>
   )

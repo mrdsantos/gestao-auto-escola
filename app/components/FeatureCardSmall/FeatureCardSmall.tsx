@@ -15,7 +15,7 @@ const FeatureCardSmall = ({ iconName, iconStyle, iconSize, title, description }:
             </div>
             <div className="pl-6">
                 <h3 className="text-lg font-bold">{title}</h3>
-                <p className="text-gray-900">{description}</p>
+                <p className="text-custom-content">{description}</p>
             </div>
         </div>
     )

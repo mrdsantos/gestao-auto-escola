@@ -4,10 +4,10 @@ export const metadata: Metadata = {
 }
 const Cadastro = () => {
     return (
-        <main className="flex-grow flex flex-col align-middle bg-gradient-circle bg-contain bg-no-repeat">
+        <main className="flex-grow flex flex-col align-middle bg-gradient-circle bg-contain bg-no-repeat text-custom-content">
             <div className="w-full max-w-full mx-auto text-center mt-10">
                 <section className="w-8/12 mx-auto text-center">
-                    <h1 className="text-5xl font-semibold all-petit-caps"><span className="underline decoration-primary-lighter decoration-[16px]">B</span>em V<span className="bg-complementary-lighter">ind</span>o</h1>
+                    <h1 className="text-5xl font-semibold all-petit-caps"><span className="underline decoration-primary-lighter decoration-[16px]">B</span>em Vindo</h1>
                 </section>
             </div>
             {/* colunas de login */}
@@ -43,7 +43,7 @@ const Cadastro = () => {
                                 </div>
                                 <div className="text-start flex flex-wrap gap-2">
                                     <label htmlFor="como-conheceu">Como conheceu o Gestão Auto Escola?</label>
-                                    <select id="como-conheceu" className="select max-w-sm bg-gray-100">
+                                    <select id="como-conheceu" className="select max-w-sm">
                                         <option disabled selected>Escolha um</option>
                                         <option>Google</option>
                                         <option>Mídias Sociais</option>

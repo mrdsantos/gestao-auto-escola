@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer bg-gray-950 p-10 mt-10 flex flex-col items-center">
       <div className="w-10/12 flex flex-row flex-wrap justify-evenly text-white">
         <div className="">
-          <div className="footer-title text-white p-5 basis[33.3%] flex flex-col gap-5 opacity-1">
+          <div className="footer-title p-5 basis[33.3%] flex flex-col gap-5 opacity-1">
             <svg
               width="50"
               height="50"
@@ -83,7 +83,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-neutral-content block">
+      <div className="text-white block">
         <p>Copyright © {new Date().getFullYear()} - Todos os direitos reservados</p>
       </div>
     </footer>

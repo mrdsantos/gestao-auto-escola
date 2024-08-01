@@ -6,10 +6,10 @@ export const metadata: Metadata = {
 }
 export default function PerguntasFrequentes() {
   return (
-    <main className="space-y-10">
+    <main className="space-y-10 text-custom-content">
       {/* primeira linha com banner */}
       <div className="w-full mt-10">
-        <h1 className="text-center text-4xl font-black"><span className="bg-complementary-lighter">PERGU</span>NT<span className="underline decoration-accent-lighter decoration-8">AS FREQUE</span>NTES</h1>
+        <h1 className="text-center text-4xl font-black">PERGUNT<span className="underline decoration-accent-lighter decoration-8">AS FREQUE</span>NTES</h1>
       </div>
       {/* segunda linha com 2 colunas, 1 imagem e 1 acordeon */}
       <div className="div flex flex-row flex-wrap justify-center align-top
