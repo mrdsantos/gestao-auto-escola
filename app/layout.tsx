@@ -3,6 +3,8 @@ import { Quicksand } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import ThemeInitializer from "./components/ThemeInitializer/ThemeInitializer";
+
 const quicksand = Quicksand({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -21,8 +23,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br" data-theme="light">
+    <html lang="pt-br">
       <body className={`bg-background, ${quicksand.className}`}>
+      <ThemeInitializer />
         <div className="min-h-screen flex flex-col">
           <Header />
           {children}
