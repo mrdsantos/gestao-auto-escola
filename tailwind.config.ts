@@ -6,27 +6,29 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  plugins: [
-    require("@tailwindcss/typography"),
-    require('daisyui')
-  ],
   theme: {
     extend: {
       colors: {
-        "primary": "#FF5724",
-        "primary-darker": "#F93A00",
-        "primary-lighter": "#FF7B53",
-        "complementary": "#00B3FF",
-        "complementary-darker": "#0097EE",
-        "complementary-lighter": "#B1E4FF",
-        "secondary": "#FF245E",
-        "secondary-darker": "#D81859",
-        "secondary-lighter": "#FF93B0",
-        "accent": "#FF245E",
-        "accent-darker": "#D81859",
-        "accent-lighter": "#FF93B0",
-        "background": "#F5F5F5",
-        "surface": "#EBEBEB",
+        primary: {
+          DEFAULT: "hsl(var(--color-primary) / <alpha-value>)",
+          darker: "hsl(var(--color-primary-darker) / <alpha-value>)",
+          lighter: "hsl(var(--color-primary-lighter) / <alpha-value>)",
+        },
+        complementary: {
+          DEFAULT: "hsl(var(--color-complementary) / <alpha-value>)",
+          darker: "hsl(var(--color-complementary-darker) / <alpha-value>)",
+          lighter: "hsl(var(--color-complementary-lighter) / <alpha-value>)",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--color-accent) / <alpha-value>)",
+          darker: "hsl(var(--color-accent-darker) / <alpha-value>)",
+          lighter: "hsl(var(--color-accent-lighter) / <alpha-value>)",
+        },
+        surface: "hsl(var(--color-surface) / <alpha-value>)",
+        custom: {
+          content: "hsl(var(--color-custom-neutral-content) / <alpha-value>)",
+        },
+        background: "#F5F5F5",
       },
       backgroundImage: {
         "gradient-circle": "url(/img/background-gradient-circle-1280-480.png)",
@@ -34,24 +36,20 @@ const config: Config = {
       },
       screens: {
         'sm': '639.98px',
-        // => @media (min-width: 640px) { ... }
-
         'md': '767.98px',
-        // => @media (min-width: 768px) { ... }
-
         'lg': '1023.98px',
-        // => @media (min-width: 1024px) { ... }
-
         'xl': '1279.98px',
-        // => @media (min-width: 1280px) { ... }
-
         '2xl': '1535.98px',
-        // => @media (min-width: 1536px) { ... }
-      }
+      },
     },
   },
+  plugins: [
+    require("@tailwindcss/typography"),
+    require('daisyui')
+  ],
   daisyui: {
     themes: ["light", "dark"],
+
   },
 };
 
