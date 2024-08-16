@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import AcordeonPlusSign from "../components/AcordeonPlusSign/AcordeonPlusSign";
+import LottieFaq from "../components/LottieFaq/LottieFaq";
 export const metadata: Metadata = {
   title: "Perguntas Frequentes"
 }
@@ -15,13 +16,7 @@ export default function PerguntasFrequentes() {
       <div className="div flex flex-row flex-wrap justify-center align-top
        gap-6">
         <div className="w-5/12">
-          <Image
-            src="/img/faq-banner-650-480.png"
-            width={650}
-            height={480}
-            alt=""
-            className="rounded-md"
-          />
+          <LottieFaq />
         </div>
         <div className="w-5/12">
           <AcordeonPlusSign

@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import ThemeInitializer from "./components/ThemeInitializer/ThemeInitializer";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import InfoBanner from "./components/Infobanner/Infobanner";
 
 const quicksand = Quicksand({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={`bg-background, ${quicksand.className}`}>
       <ThemeInitializer />
         <div className="min-h-screen flex flex-col">
+          <InfoBanner />
           <Header />
           {children}
           <Footer />

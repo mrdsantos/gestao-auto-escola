@@ -2,19 +2,16 @@
 import Image from "next/image";
 import FeatureCardLarge from "./components/FeatureCardLarge/FeatureCardLarge";
 import Link from "next/link";
+import LottieRedCar from "./components/LottieRedCar/LottieRedCar";
 
 export default function Home() {
+
   return (
     <main className="flex-grow space-y-14 bg-gradient-circle bg-cover bg-no-repeat">
       <div className="mx-auto image flex flex-row flex-nowrap justify-center px-5 sm:px-10">
         {/* //IMG create images for hero section */}
         <div className="hidden sm:inline-block mr-5 mt-10">
-          <Image
-            src="/img/home-header-banner-640-640.png"
-            width={640}
-            height={640}
-            alt=""
-          />
+          <LottieRedCar />
         </div>
         <section className="max-w-80 text-center flex flex-col justify-center">
           <h1 className="mb-0 text-complementary-darker font-black text-5xl sm:text-6xl md:text-7xl">Transforme Sua Autoescola</h1>
@@ -149,7 +146,7 @@ export default function Home() {
               <section className="text-base-content w-4/5 p-5 order-2 md:order-1 ">
                 <h2 className="text-center md:text-end font-bold mb-5 text-lg">Aumento de Produtividade e Eficiência</h2>
                 <p className="font-medium indent-5">
-                Padronizamos tarefas diárias, aumentando a produtividade e eficiência. A interface intuitiva e o excelente suporte técnico facilitaram a rápida adoção da plataforma. Agora, temos mais tempo para focar no desenvolvimento dos alunos, com resultados impressionantes.
+                  Padronizamos tarefas diárias, aumentando a produtividade e eficiência. A interface intuitiva e o excelente suporte técnico facilitaram a rápida adoção da plataforma. Agora, temos mais tempo para focar no desenvolvimento dos alunos, com resultados impressionantes.
 
                 </p>
               </section>
