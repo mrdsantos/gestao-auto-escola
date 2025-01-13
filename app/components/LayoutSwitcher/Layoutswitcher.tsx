@@ -13,6 +13,15 @@ export default function LayoutSwitcher({
 }) {
     const pathname = usePathname();
     const isDashboard = pathname.startsWith("/dashboard");
+
+    if (isDashboard) {
+        return (
+        <div className="min-h-screen">
+            {children}
+        </div>
+        )
+    }
+    return (
     <div className="min-h-screen flex flex-col">
         <InfoBanner />
         <Header />
@@ -20,11 +29,5 @@ export default function LayoutSwitcher({
         <Footer />
         <SpeedInsights />
     </div>
-    return isDashboard ? <div className="min-h-screen">{children}</div> : <div className="min-h-screen flex flex-col">
-        <InfoBanner />
-        <Header />
-        {children}
-        <Footer />
-        <SpeedInsights />
-    </div>
+    )
 }
