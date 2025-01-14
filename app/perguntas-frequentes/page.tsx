@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Image from "next/image";
 import AcordeonPlusSign from "../components/AcordeonPlusSign/AcordeonPlusSign";
 import LottieFaq from "../components/LottieFaq/LottieFaq";
 export const metadata: Metadata = {
