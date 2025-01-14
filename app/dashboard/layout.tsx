@@ -1,13 +1,6 @@
 import type { Metadata } from "next";
-import { Quicksand } from "next/font/google";
-import "./globals.css";
-import ThemeInitializer from "./components/ThemeInitializer/ThemeInitializer";
-import LayoutSwitcher from "./components/LayoutSwitcher/Layoutswitcher";
-
-const quicksand = Quicksand({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
+import LayoutSwitcher from "../components/LayoutSwitcher/Layoutswitcher";
+import DashboardSidebar from "./components/Sidebar/Sidebar";
 
 export const metadata: Metadata = {
   title: {
@@ -24,18 +17,20 @@ export const metadata: Metadata = {
   ],
 };
 
-export default function RootLayout({
+export default function DashboardLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-br">
-      <body className={`${quicksand.className}`}>
-        <ThemeInitializer />
+    <main className="grid grid-cols-5 gap-3 bg-violet-100">
+      <div>
+        <DashboardSidebar />
+      </div>
+      <div className="col-span-4">
         {/* Usa o LayoutSwitcher para gerenciar o layout com base na rota */}
         <LayoutSwitcher>{children}</LayoutSwitcher>
-      </body>
-    </html>
+      </div>
+    </main>
   );
 }
