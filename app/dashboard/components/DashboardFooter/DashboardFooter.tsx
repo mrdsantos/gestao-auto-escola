@@ -38,7 +38,7 @@ function DashboardFooter() {
           {/* Conteúdo do dropdown */}
           <ul
             tabIndex={0}
-            className="dropdown-content menu p-2 shadow bg-base-100 rounded-box mb-4"
+            className="dropdown-content menu p-2 shadow bg-zinc-50 rounded-box mb-4"
           >
             <li>
               <Link href="/dashboard/configuracoes" className="w-full text-indigo-700 hover:bg-indigo-100">
