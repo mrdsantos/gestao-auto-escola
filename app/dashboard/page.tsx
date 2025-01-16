@@ -1,4 +1,4 @@
-"use client";
+"use client"; 
 
 import { useState } from "react";
 import { Line } from "react-chartjs-2";
@@ -118,32 +118,52 @@ export default function DashboardPage() {
         </div>
       </header>
 
+      {/* Campos de Informação */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+        <div className="bg-white p-4 rounded-lg shadow-md">
+          <h4 className="text-sm font-semibold text-gray-500">Total de Aulas</h4>
+          <p className="text-2xl font-bold text-gray-800">76</p>
+        </div>
+        <div className="bg-white p-4 rounded-lg shadow-md">
+          <h4 className="text-sm font-semibold text-gray-500">Alunos Inscritos</h4>
+          <p className="text-2xl font-bold text-gray-800">450</p>
+        </div>
+        <div className="bg-white p-4 rounded-lg shadow-md">
+          <h4 className="text-sm font-semibold text-gray-500">Aulas Canceladas</h4>
+          <p className="text-2xl font-bold text-gray-800">12</p>
+        </div>
+        <div className="bg-white p-4 rounded-lg shadow-md">
+          <h4 className="text-sm font-semibold text-gray-500">Taxa de Satisfação</h4>
+          <p className="text-2xl font-bold text-gray-800">89%</p>
+        </div>
+      </div>
+
       {/* Pop-up lateral de notificações */}
       {isPopupOpen && (
-  <div
-    className={`fixed top-0 right-0 w-64 h-auto bg-white shadow-lg p-4 z-50 m-4`}
-  >
-    <h3 className="text-lg font-semibold mb-4">Notificações</h3>
-    <ul className="space-y-2">
-      {/* Notificação fictícia */}
-      <li className="flex items-center space-x-2 text-gray-700">
-        <span className="w-5 h-5 bg-blue-500 text-white flex items-center justify-center rounded-full">i</span>
-        <span>Aula amanhã as 10:15 no carro AAA-1234</span>
-      </li>
-      {/* Notificação fictícia 2 */}
-      <li className="flex items-center space-x-2 text-gray-700">
-        <span className="w-5 h-5 bg-blue-500 text-white flex items-center justify-center rounded-full">i</span>
-        <span>Aula pratica marcada para 1/1/2026.</span>
-      </li>
-    </ul>
-    <button
-      onClick={togglePopup}
-      className="mt-4 px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600"
-    >
-      Fechar
-    </button>
-  </div>
-)}
+        <div
+          className={`fixed top-0 right-0 w-64 h-auto bg-white shadow-lg p-4 z-50 m-4`}
+        >
+          <h3 className="text-lg font-semibold mb-4">Notificações</h3>
+          <ul className="space-y-2">
+            {/* Notificação fictícia */}
+            <li className="flex items-center space-x-2 text-gray-700">
+              <span className="w-5 h-5 bg-blue-500 text-white flex items-center justify-center rounded-full">i</span>
+              <span>Aula amanhã às 10:15 no carro AAA-1234</span>
+            </li>
+            {/* Notificação fictícia 2 */}
+            <li className="flex items-center space-x-2 text-gray-700">
+              <span className="w-5 h-5 bg-blue-500 text-white flex items-center justify-center rounded-full">i</span>
+              <span>Aula prática marcada para 1/1/2026.</span>
+            </li>
+          </ul>
+          <button
+            onClick={togglePopup}
+            className="mt-4 px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600"
+          >
+            Fechar
+          </button>
+        </div>
+      )}
 
       <div className="flex flex-col lg:flex-row lg:justify-center lg:space-x-8 space-y-8 lg:space-y-0">
         {/* Gráfico de Linha */}
