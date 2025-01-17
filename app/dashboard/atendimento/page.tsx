@@ -1,7 +1,9 @@
-export default function agenda() {
+import { CalendarDays, Clock, BellDot, SearchIcon } from "lucide-react";
+
+export default function Atendimento() {
   return (
     <div>
-      <h1 className="text-3xl">Atendimento</h1>
+      
     </div>
-  )
+  );
 }
