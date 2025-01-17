@@ -4,7 +4,7 @@ import DashboardCardTextLg from "../components/DashboardCardTextLg/DashboardCard
 export default function Atendimento() {
   return (
     <div>
-      <h1>Todos Tickets</h1>
+      <h1 className="font-extrabold text-3xl">Todos Tickets</h1>
       <div className="divider"></div>
       {/* Container do atendimento */}
       <div className="flex flex-row gap-5">
