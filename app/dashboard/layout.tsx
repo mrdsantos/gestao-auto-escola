@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ],
 };
 
-const roboto = Roboto ({
+const roboto = Roboto({
   subsets: ['latin'],
   weight: ['100', '300', '400', '500', '700', '900'],
   style: ['normal', 'italic'],
@@ -38,7 +38,9 @@ export default function DashboardLayout({
       <div className="col-span-4 py-4">
         <DashboardHeader />
         {/* Usa o LayoutSwitcher para gerenciar o layout com base na rota */}
-        <LayoutSwitcher>{children}</LayoutSwitcher>
+        <div className="p-6">
+          <LayoutSwitcher>{children}</LayoutSwitcher>
+        </div>
       </div>
     </main>
   );
