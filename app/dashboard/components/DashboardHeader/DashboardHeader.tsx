@@ -19,6 +19,7 @@ function DashboardHeader() {
                     <div className="flex flex-row gap-1">
                         <Clock />
                         {new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+
                     </div>
                 </div>
 

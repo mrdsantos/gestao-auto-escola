@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import LayoutSwitcher from "../components/LayoutSwitcher/Layoutswitcher";
 import DashboardSidebar from "./components/Sidebar/Sidebar";
+import DashboardHeader from "./components/DashboardHeader/DashboardHeader";
+import { Roboto } from "next/font/google";
 
 export const metadata: Metadata = {
   title: {
@@ -17,19 +19,28 @@ export const metadata: Metadata = {
   ],
 };
 
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['100', '300', '400', '500', '700', '900'],
+  style: ['normal', 'italic'],
+})
+
 export default function DashboardLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <main className="grid grid-cols-5 gap-3 bg-violet-100">
+    <main className={`${roboto.className} grid grid-cols-5 gap-3 bg-violet-100`}>
       <div>
         <DashboardSidebar />
       </div>
-      <div className="col-span-4">
+      <div className="col-span-4 py-4">
+        <DashboardHeader />
         {/* Usa o LayoutSwitcher para gerenciar o layout com base na rota */}
-        <LayoutSwitcher>{children}</LayoutSwitcher>
+        <div className="p-6">
+          <LayoutSwitcher>{children}</LayoutSwitcher>
+        </div>
       </div>
     </main>
   );

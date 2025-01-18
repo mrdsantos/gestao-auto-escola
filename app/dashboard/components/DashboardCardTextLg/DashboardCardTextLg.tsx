@@ -21,7 +21,7 @@ function DashboardCardTextLg({
   return (
     <div>
       {/* Body do Card */}
-      <div className="flex flex-row w-60 rounded-md shadow-md bg-zinc-50 p-3 ">
+      <div className="flex flex-row w-60 rounded-md shadow-md bg-zinc-50 p-3">
         {/* Icone do Card */}
         <div className="w-4/12 self-center">
           {/* Exibe o ícone, se encontrado */}
