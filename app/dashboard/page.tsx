@@ -69,7 +69,7 @@ const Dashboard = () => {
   return (
     <div>
       {/* Campos de Informação */}
-      <div className="flex flex-row justify-center m-w-full mt-5 gap-6">
+      <div className="flex flex-row justify-center w-full mt-5 gap-6">
         {/* Corpo do Card */}
         <DashboardCardTextLg
           icon="BookA"
