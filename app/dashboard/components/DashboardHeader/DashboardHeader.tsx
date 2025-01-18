@@ -14,11 +14,18 @@ function DashboardHeader() {
                 <div className="absolute left-1/2 -translate-x-1/2 flex flex-row gap-3 items-center text-gray-500">
                     <div className="flex flex-row gap-1">
                         <CalendarDays />
-                        <span>18/01/2025</span>
+                        <span>
+                          {new Date().toLocaleDateString('en-US', {
+                            year: 'numeric',
+                            month: '2-digit',
+                            day: '2-digit'
+                          })}
+                        </span>
                     </div>
                     <div className="flex flex-row gap-1">
                         <Clock />
-                        14:37
+                        {new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+
                     </div>
                 </div>
 
