@@ -15,7 +15,7 @@ function DashboardHeader() {
                     <div className="flex flex-row gap-1">
                         <CalendarDays />
                         <span>
-                          {new Date().toLocaleDateString('en-US', {
+                          {new Date().toLocaleDateString('pt-BR', {
                             year: 'numeric',
                             month: '2-digit',
                             day: '2-digit'
