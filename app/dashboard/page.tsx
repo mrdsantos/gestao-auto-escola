@@ -69,7 +69,7 @@ const Dashboard = () => {
   return (
     <div>
       {/* Campos de Informação */}
-      <div className="flex flex-row justify-center w-full mt-5 gap-6">
+      <div className="flex flex-row flex-wrap justify-center w-full mt-5 gap-3">
         {/* Corpo do Card */}
         <DashboardCardTextLg
           icon="BookA"
@@ -94,7 +94,7 @@ const Dashboard = () => {
         />
         <DashboardCardTextLg
           icon="Smile"
-          title="Taxa de Satisfação"
+          title="Taxa Satisfação"
           bodyNumber="89%"
           fill="white"
           stroke="yellow"
@@ -103,15 +103,15 @@ const Dashboard = () => {
          </div>
     </div>
       {/* Gráficos */}
-      <div className="flex flex-col lg:flex-row lg:justify-center lg:space-x-8 space-y-8 lg:space-y-0">
+      <div className="flex flex-col mt-5 lg:flex-row lg:justify-center lg:space-x-8 space-y-8 lg:space-y-0">
         {/* Gráfico de Linha */}
-        <div className="w-full lg:w-5/12 bg-white p-4 rounded-lg shadow-md" style={{ height: "400px" }}>
+        <div className="w-full lg:w-5/12 bg-white p-4 rounded-lg shadow-md">
           <h3 className="text-lg font-semibold mb-4">Aulas nos Últimos 12 Meses</h3>
           <Line data={lineData} options={chartOptions} />
         </div>
 
         {/* Gráfico de Barras */}
-        <div className="w-full lg:w-5/12 bg-white p-4 rounded-lg shadow-md" style={{ height: "400px" }}>
+        <div className="w-full lg:w-5/12 bg-white p-4 rounded-lg shadow-md">
           <h3 className="text-lg font-semibold mb-4">Alunos nos Últimos 12 Meses</h3>
           <Bar data={barData} options={chartOptions} />
         </div>

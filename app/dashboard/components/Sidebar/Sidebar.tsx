@@ -5,9 +5,9 @@ import DashboardFooter from "../DashboardFooter/DashboardFooter"
 
 function Sidebar() {
     return (
-        <aside className="bg-zinc-50 min-h-full px-6 flex flex-col">
+        <aside className="bg-zinc-50 min-h-full px-6 flex flex-col overflow-auto">
             {/* Cabeçalho da Sidebar */}
-            <header className="flex flex-row gap-2 px-2 py-4">
+            <header className="flex flex-col lg:flex-row gap-2 px-2 py-4">
                 <Image
                     src="/img/android-chrome-512x512.png"
                     width={70}

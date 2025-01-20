@@ -24,16 +24,16 @@
 		--color-surface: 180deg 0% 8%;
 		--color-custom-neutral-content: 180deg 0% 88%;
 
-		background-color: #0A0A0A;
+		background-color: #0a0a0a;
 
-		.shadow-lg, .shadow-xl{
+		.shadow-lg,
+		.shadow-xl {
 			box-shadow: none;
 		}
 
 		.text-base-content {
 			color: hsl(180deg 0% 88%);
 		}
-
 	}
 }
 
@@ -50,4 +50,11 @@ input:focus,
 
 .footer-title {
 	@apply opacity-90;
+}
+
+.dynamic-text {
+	font-size: calc(1rem + 0.5vw); /* Ajuste dinâmico da fonte */
+	white-space: nowrap; /* Impede quebra de linha */
+	overflow: hidden; /* Esconde texto que ultrapassa o limite */
+	text-overflow: ellipsis; /* Adiciona reticências para textos longos */
 }

@@ -31,11 +31,11 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className={`${roboto.className} grid grid-cols-5 gap-3 bg-violet-100`}>
+    <main className={`${roboto.className} grid grid-cols-4 lg:grid-cols-5 gap-3 bg-violet-100`}>
       <div>
         <DashboardSidebar />
       </div>
-      <div className="col-span-4 py-4">
+      <div className="col-span-3 lg:col-span-4 py-4">
         <DashboardHeader />
         {/* Usa o LayoutSwitcher para gerenciar o layout com base na rota */}
         <div className="p-6">

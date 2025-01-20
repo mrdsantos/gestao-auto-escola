@@ -63,7 +63,7 @@ export default function Atendimento() {
         </div>
       </div>
       {/* Seção Inferior de Cartões */}
-      <div className="flex flex-row justify-center m-w-full mt-5 gap-6">
+      <div className="flex flex-row justify-center flex-wrap m-w-full mt-5 gap-6">
         {/* Corpo do Card */}
         <DashboardCardTextLg
           icon="Ticket"

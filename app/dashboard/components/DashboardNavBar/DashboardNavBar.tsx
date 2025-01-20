@@ -20,7 +20,7 @@ function DashboardNavBar() {
                                 ? "bg-gradient-to-br from-purple-900 to-indigo-700 text-white"
                                 : "text-gray-400 bg-gradient-to-br hover:text-indigo-800 hover:bg-zinc-50"}`}
                     >
-                        <LayoutDashboard />
+                        <LayoutDashboard className="hidden lg:block"/>
                         Dashboard
                     </Link>
                     {/* Link para o Cadastro */}
@@ -32,7 +32,7 @@ function DashboardNavBar() {
                                 ? "bg-gradient-to-br from-purple-900 to-indigo-700 text-white"
                                 : "text-gray-400 bg-gradient-to-br hover:text-indigo-800 hover:bg-zinc-50"}`}
                     >
-                        <Users />
+                        <Users className="hidden lg:block"/>
                         Pessoas
                     </Link>
                     {/* Link para a Agenda */}
@@ -44,7 +44,7 @@ function DashboardNavBar() {
                                 ? "bg-gradient-to-br from-purple-900 to-indigo-700 text-white"
                                 : "text-gray-400 bg-gradient-to-br hover:text-indigo-800 hover:bg-zinc-50"}`}
                     >
-                        <CalendarDays />
+                        <CalendarDays className="hidden lg:block"/>
                         Agenda
                     </Link>
                     {/* Link para o Atendimento */}
@@ -56,7 +56,7 @@ function DashboardNavBar() {
                                 ? "bg-gradient-to-br from-purple-900 to-indigo-700 text-white"
                                 : "text-gray-400 bg-gradient-to-br hover:text-indigo-800 hover:bg-zinc-50"}`}
                     >
-                        <MessageSquareShare />
+                        <MessageSquareShare className="hidden lg:block"/>
                         Atendimento
                     </Link>
                 </ul>

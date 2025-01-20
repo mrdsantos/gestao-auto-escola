@@ -31,7 +31,7 @@ function DashboardCardTextLg({
         </div>
         <div className="flex flex-col">
           {/* Header do Card */}
-          <div className="text-xl">
+          <div className="text-xl dynamic-text">
             <h1>{title}</h1>
           </div>
           {/* Body do header */}
