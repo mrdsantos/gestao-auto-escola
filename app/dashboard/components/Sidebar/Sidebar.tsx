@@ -5,16 +5,16 @@ import DashboardFooter from "../DashboardFooter/DashboardFooter"
 
 function Sidebar() {
     return (
-        <aside className="bg-zinc-50 min-h-full px-6 flex flex-col overflow-auto">
+        <aside className="bg-zinc-50 px-6 min-h-full flex flex-col overflow-auto">
             {/* Cabeçalho da Sidebar */}
-            <header className="flex flex-col lg:flex-row gap-2 px-2 py-4">
+            <header className="flex flex-col lg:flex-row gap-2 px-2 py-4 items-center">
                 <Image
                     src="/img/android-chrome-512x512.png"
                     width={70}
                     height={70}
                     alt="Logo da Empresa"
                 />
-                <ul>
+                <ul className="text-center lg:text-left">
                     <li className="font-medium">Dashboard</li>
                     <li className="font-bold">Gestão Auto Escola</li>
                 </ul>

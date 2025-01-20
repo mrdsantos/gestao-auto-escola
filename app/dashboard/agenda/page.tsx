@@ -67,7 +67,7 @@ const Schedule = () => {
         <div className="flex justify-between items-center mb-4">
           {/* Informações do Usuário */}
           <div className="flex items-center space-x-4">
-            <Image
+            <Image 
               src="/dashboard/img/avatar-cservice-male-500-500.png"
               width={40}
               height={40}

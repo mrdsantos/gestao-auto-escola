@@ -1,4 +1,4 @@
-function Opcoes() {
+function configuracoes() {
   return (
     <div className="p-4">
       <h1 className="text-3xl">Opções</h1>
@@ -7,4 +7,4 @@ function Opcoes() {
   )
 }
 
-export default Opcoes;
+export default configuracoes

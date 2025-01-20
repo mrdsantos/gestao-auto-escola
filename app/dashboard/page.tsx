@@ -59,17 +59,16 @@ const chartOptions = {
   plugins: {
     legend: { position: "top" as const },
     title: { display: true },
-    Layout: {toPadding: 10
-    }
+    layout: { padding: 10 }
   },
 };
 
 // Componente principal
-const Dashboard = () => {
+const Pessoas = () => {
   return (
     <div>
       {/* Campos de Informação */}
-      <div className="flex flex-row flex-wrap justify-center w-full mt-5 gap-3">
+      <div className="flex flex-col md:flex-row flex-wrap justify-center w-full mt-5 gap-3">
         {/* Corpo do Card */}
         <DashboardCardTextLg
           icon="BookA"
@@ -120,4 +119,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Pessoas;

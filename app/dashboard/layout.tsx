@@ -31,16 +31,19 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className={`${roboto.className} grid grid-cols-4 lg:grid-cols-5 gap-3 bg-violet-100`}>
-      <div>
+    <main className={`${roboto.className} grid grid-cols-1 lg:grid-cols-5 gap-3 bg-violet-100`}>
+      <div className="col-span-1 lg:col-span-1">
         <DashboardSidebar />
       </div>
-      <div className="col-span-3 lg:col-span-4 py-4">
+      <div className="col-span-1 lg:col-span-4 py-4">
         <DashboardHeader />
         {/* Usa o LayoutSwitcher para gerenciar o layout com base na rota */}
         <div className="p-6">
           <LayoutSwitcher>{children}</LayoutSwitcher>
         </div>
+        <footer className="text-center py-4">
+          <p>&copy; 2025 Gestão Auto Escola. Todos os direitos reservados.</p>
+        </footer>
       </div>
     </main>
   );
