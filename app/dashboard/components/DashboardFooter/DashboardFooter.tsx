@@ -7,7 +7,7 @@ import { SlidersVertical } from "lucide-react";
 function DashboardFooter() {
   return (
     <footer>
-      <ul className="w-full flex flex-row mb-4 justify-end items-center">
+      <ul className="w-full flex flex-col lg:flex-row mb-4 justify-end items-center gap-4 lg:gap-0">
         {/* Informações do usuário */}
         <li className="grow">
           <div className="flex flex-row gap-2 items-center ">

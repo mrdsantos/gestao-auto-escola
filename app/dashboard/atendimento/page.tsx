@@ -3,19 +3,19 @@ import DashboardCardTextLg from "../components/DashboardCardTextLg/DashboardCard
 
 export default function Atendimento() {
   return (
-    <div>
+    <div className="p-4">
       <h1 className="font-extrabold text-3xl">Todos Tickets</h1>
       <div className="divider"></div>
       {/* Container do atendimento */}
-      <div className="flex flex-row gap-5">
+      <div className="flex flex-col lg:flex-row gap-5">
         {/* Lado esquerdo */}
-        <div className="bg-zinc-50 rounded-md min-h-[500px] max-h-[500px] overflow-auto basis-1/4 p-3">
+        <div className="bg-zinc-50 rounded-md min-h-[500px] max-h-[500px] overflow-auto basis-full lg:basis-1/4 p-3">
           {/* Card de Tickets */}
           <AtendimentoTicketCard />
           <AtendimentoTicketCard />
         </div>
         {/* Lado direito */}
-        <div className="bg-zinc-50 rounded-md min-h-[500px] overflow-auto basis-3/4">
+        <div className="bg-zinc-50 rounded-md min-h-[500px] overflow-auto basis-full lg:basis-3/4">
           {/* Chat de atendimento */}
           <div className="flex flex-col h-full">
             {/* Área de chat */}
@@ -63,7 +63,7 @@ export default function Atendimento() {
         </div>
       </div>
       {/* Seção Inferior de Cartões */}
-      <div className="flex flex-row justify-center m-w-full mt-5 gap-6">
+      <div className="flex flex-col lg:flex-row justify-center flex-wrap w-full mt-5 gap-6">
         {/* Corpo do Card */}
         <DashboardCardTextLg
           icon="Ticket"
