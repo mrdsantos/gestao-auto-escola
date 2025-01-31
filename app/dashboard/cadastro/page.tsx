@@ -22,9 +22,13 @@ export default function CadastroClientes() {
         cliente.id === formData.id ? { ...formData } : cliente
       );
       setClientes(clientesAtualizados);
+      // Código para atualizar no banco de dados (desativado)
+      // atualizarClienteNoBanco(formData);
     } else {
       const novoCliente = { ...formData, id: Date.now() };
       setClientes([...clientes, novoCliente]);
+      // Código para adicionar ao banco de dados (desativado)
+      // adicionarClienteNoBanco(novoCliente);
     }
     limparFormulario();
   };
@@ -34,6 +38,8 @@ export default function CadastroClientes() {
     if (formData.id === id) {
       limparFormulario();
     }
+    // Código para remover do banco de dados (desativado)
+    // removerClienteNoBanco(id);
   };
 
   const handleEditar = (cliente) => {
