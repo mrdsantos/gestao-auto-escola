@@ -1,6 +1,6 @@
 export default function Cadastro() {
   return (
-    <div className="flex items-start justify-center min-h-screen bg-gray-100 p-6">
+    <div className="flex items-start justify-center min-h-screen bg-gray-50 p-6">
       {/* Formulário */}
       <div className="bg-white p-6 rounded-2xl shadow-md w-full max-w-md">
         <h2 className="text-2xl font-semibold text-center mb-4">Cadastro</h2>
@@ -9,7 +9,7 @@ export default function Cadastro() {
             <label className="block text-gray-700">Nome Completo</label>
             <input
               type="text"
-              className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-2 border rounded-lg bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Digite seu nome"
             />
           </div>
@@ -18,7 +18,7 @@ export default function Cadastro() {
             <label className="block text-gray-700">E-mail</label>
             <input
               type="email"
-              className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-2 border rounded-lg bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Digite seu e-mail"
             />
           </div>
@@ -27,7 +27,7 @@ export default function Cadastro() {
             <label className="block text-gray-700">Senha</label>
             <input
               type="password"
-              className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-2 border rounded-lg bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Digite sua senha"
             />
           </div>
